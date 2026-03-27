@@ -16,7 +16,7 @@ I'm a motivated and responsible BCA student (4th Semester) at Aadim National Col
 
 ## Experience
 **Full Stack Developer** — *Fresher / Freelance*
-*2023 – Present*
+*2025 – Present*
 - Building full-stack web applications using the MERN stack.
 - Focused on professional correspondence, technical excellence, and problem-solving.
 - Developing complete software solutions starting from DB design to interactive UI.
@@ -25,7 +25,7 @@ I'm a motivated and responsible BCA student (4th Semester) at Aadim National Col
 
 **Sanskar — Multi-Vendor App**
 *MongoDB, Express.js, React, Node.js, eSewa, Khalti*
-A production-grade multi-vendor platform for religious services and e-commerce. Features secure payment integration with eSewa and Khalti. It includes advanced features like marketplace management, vendor dashboards, and a booking system for religious ceremonies.
+A production-grade multi-vendor platform for religious services and e-commerce. Features secure payment integration with eSewa and Khalti. It includes advanced features like marketplace management, vendor dashboards, and a booking system for religious ceremonies.(Ongoing Project)
 
 **LinkIt — Real-Time Chat App**
 *React, Node.js, MongoDB, Socket.io, WebRTC, Tailwind CSS*
@@ -37,11 +37,11 @@ A highly animated, glassmorphism-styled developer portfolio showcasing my projec
 
 ## Education
 **BCA — 4th Semester (Running)**
-*Aadim National College, Tribhuvan University* | 2022 – Present
+*Aadim National College, Tribhuvan University* | 2024 – Present
 Focusing on software development, database management, and computer applications.
 
 **+2 (Science)**
-*Xavier International College* | 2020 – 2022
+*Xavier International College* | 2021 – 2023
 
 **SEE (Secondary Education Examination)**
 *Saraswati Secondary School* | 2019
