@@ -17,7 +17,7 @@ export const portfolioConfig = {
   bio: `I'm a motivated and responsible BCA student (4th Semester) at Aadim National College with a passion for clean code and modern web technologies. I specialize in the MERN stack and I'm currently seeking opportunities to grow as a Correspondence Officer or Full Stack Developer. I bring a strong mix of technical expertise and professional communication skills to every project.`,
   location: "Machhapokhari, Kathmandu",
   availableForWork: true,
-  profileImage: "/profile.jpg",
+  profileImage: "/profile-final.png",
 
   // ── Resume ─────────────────────────────────────────────────
   resumeFile: "/Kailash_Kunwar_Resume.pdf", // Place your PDF in /public
