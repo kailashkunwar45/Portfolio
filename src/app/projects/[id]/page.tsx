@@ -82,21 +82,6 @@ export default function ProjectDetails() {
               </div>
             </motion.div>
 
-            {/* Banner Image / Placeholder */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="relative aspect-video w-full overflow-hidden rounded-3xl border border-white/10 bg-zinc-900 shadow-2xl shadow-cyan-500/5"
-            >
-              {project.image ? (
-                <Image src={project.image} alt={project.title} fill className="object-cover" />
-              ) : (
-                <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-zinc-900 to-zinc-950">
-                  <LayoutIcon size={64} className="text-zinc-800" />
-                </div>
-              )}
-            </motion.div>
 
             {/* Description Section */}
             <motion.div

@@ -68,7 +68,7 @@ export const portfolioConfig = {
       id: "sanskar",
       title: "Sanskar — Multi-Vendor App",
       description:
-        "A production-grade multi-vendor platform for religious services and e-commerce. Built with the MERN stack, featuring secure payment integration and a dedicated marketplace.",
+        "A production-grade multi-vendor platform for religious services and e-commerce. Built with the MERN stack, featuring secure payment integration with eSewa and Khalti. It includes advanced features like marketplace management, vendor dashboards, and a booking system for religious ceremonies and services. This project is a comprehensive solution for connecting users with religious practitioners and high-quality spiritual products, designed for scalability and professional reliability.",
       techStack: ["MongoDB", "Express.js", "React", "Node.js", "eSewa", "Khalti"],
       github: "https://github.com/kailashkunwar45/sanskar",
       live: "",
@@ -79,7 +79,7 @@ export const portfolioConfig = {
       id: "linkit",
       title: "LinkIt — Real-Time Chat App",
       description:
-        "A full-featured real-time chat application with video calling, group chats, and a neural-network themed UI. Built with Socket.io for instant messaging.",
+        "A full-featured real-time chat application with video calling, group chats, and a neural-network themed UI. Built with Socket.io for instant messaging and WebRTC for peer-to-peer video communication. It features a modern, responsive design with glassmorphism aesthetics, secure authentication, and real-time 'seen' indicators. Designed for seamless communication across devices with a focus on speed, privacy, and an immersive user experience.",
       techStack: ["React", "Node.js", "MongoDB", "Socket.io", "WebRTC", "Tailwind CSS"],
       github: "https://github.com/kailashkunwar45/connectify",
       live: "https://link-it-8q6z.onrender.com",
