@@ -70,8 +70,8 @@ export const portfolioConfig = {
       description:
         "A production-grade multi-vendor platform for religious services and e-commerce. Built with the MERN stack, featuring secure payment integration with eSewa and Khalti. It includes advanced features like marketplace management, vendor dashboards, and a booking system for religious ceremonies and services. This project is a comprehensive solution for connecting users with religious practitioners and high-quality spiritual products, designed for scalability and professional reliability.",
       techStack: ["MongoDB", "Express.js", "React", "Node.js", "eSewa", "Khalti"],
-      github: "https://github.com/kailashkunwar45/sanskar",
-      live: "",
+      github: "https://github.com/kailashkunwar45/Sanskar",
+      live: "https://sanskar-bu44.onrender.com/",
       featured: true,
       image: "",
     },
