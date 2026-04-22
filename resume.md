@@ -23,6 +23,10 @@ I'm a motivated and responsible BCA student (4th Semester) at Aadim National Col
 
 ## Projects
 
+**Nexus — Social Media Platform**
+*MongoDB, Express.js, React, Node.js, Tailwind CSS, Cloudinary*
+A modern social media platform featuring real-time interactions, post sharing, user authentication, and a dynamic feed. Built with the MERN stack for a seamless and responsive user experience.
+
 **Sanskar — Multi-Vendor App**
 *MongoDB, Express.js, React, Node.js, eSewa, Khalti*
 A production-grade multi-vendor platform for religious services and e-commerce. Features secure payment integration with eSewa and Khalti. It includes advanced features like marketplace management, vendor dashboards, and a booking system for religious ceremonies.(Ongoing Project)

@@ -65,6 +65,17 @@ export const portfolioConfig = {
   // ── Projects ───────────────────────────────────────────────
   projects: [
     {
+      id: "nexus",
+      title: "Nexus — Social Media Platform",
+      description:
+        "A modern social media platform designed for seamless user interaction, featuring real-time post updates, user authentication, and interactive elements like likes, comments, and following. Built with the MERN stack, it offers a dynamic feed and a responsive UI for an engaging social experience.",
+      techStack: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS", "Cloudinary"],
+      github: "https://github.com/kailashkunwar45/Nexus",
+      live: "https://nexus-wnh7.onrender.com",
+      featured: true,
+      image: "",
+    },
+    {
       id: "sanskar",
       title: "Sanskar — Multi-Vendor App",
       description:
