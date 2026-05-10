@@ -23,6 +23,10 @@ I'm a motivated and responsible BCA student (4th Semester) at Aadim National Col
 
 ## Projects
 
+**Medique — Healthcare Management System**
+*MongoDB, Express.js, React, Node.js, TypeScript, Socket.io*
+A comprehensive healthcare platform connecting patients, doctors, and hospitals. Features a sophisticated appointment booking system, real-time notifications, and dedicated dashboards for all user roles. Built with a scalable monorepo architecture.
+
 **Nexus — Social Media Platform**
 *MongoDB, Express.js, React, Node.js, Tailwind CSS, Cloudinary*
 A modern social media platform featuring real-time interactions, post sharing, user authentication, and a dynamic feed. Built with the MERN stack for a seamless and responsive user experience.

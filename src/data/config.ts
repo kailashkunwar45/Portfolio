@@ -65,6 +65,17 @@ export const portfolioConfig = {
   // ── Projects ───────────────────────────────────────────────
   projects: [
     {
+      id: "medique",
+      title: "Medique — Healthcare Management System",
+      description:
+        "A comprehensive healthcare platform connecting patients, doctors, and hospitals. Features a sophisticated appointment booking system, real-time notifications, and dedicated dashboards for all user roles. Built with a scalable monorepo architecture, it streamlines medical consultations and hospital operations with a focus on efficiency and user experience.",
+      techStack: ["MongoDB", "Express.js", "React", "Node.js", "TypeScript", "Socket.io"],
+      github: "https://github.com/kailashkunwar45/MEDIQUE",
+      live: "https://medique-2sad.onrender.com",
+      featured: true,
+      image: "",
+    },
+    {
       id: "nexus",
       title: "Nexus — Social Media Platform",
       description:

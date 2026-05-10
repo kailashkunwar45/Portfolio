@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kailash Kunwar — Premium CV</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+    :root {
+      --platinum-bg: #cfcfcf; /* Darker, more dense platinum/silver */
+      --accent-color: #1a2a3a; /* Slightly darker accent for better contrast */
+      --text-main: #2d3436;
+      --text-light: #444444; /* Darker light text for better readability on darker background */
+      --border-color: #b2b2b2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f1f2f6;
+      color: var(--text-main);
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .cv-page {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      background: white;
+      display: flex;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    /* ── SIDEBAR ────────────────────────────── */
+    .sidebar {
+      width: 35%;
+      background: var(--platinum-bg);
+      padding: 40px 25px;
+      border-right: 2px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .name-section h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22pt;
+      font-weight: 700;
+      color: var(--accent-color);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .name-section .title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .sidebar-section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent-color);
+      margin-bottom: 12px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    .contact-info {
+      font-size: 8.5pt;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-main);
+    }
+
+    .contact-item a {
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .skills-category {
+      margin-bottom: 15px;
+    }
+
+    .skills-category h4 {
+      font-size: 9pt;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--accent-color);
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .skill-tag {
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(0,0,0,0.05);
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 8pt;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .edu-item {
+      margin-bottom: 12px;
+    }
+
+    .edu-year {
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+
+    .edu-degree {
+      font-size: 9pt;
+      font-weight: 600;
+      margin: 2px 0;
+    }
+
+    .edu-school {
+      font-size: 8pt;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    /* ── MAIN CONTENT ───────────────────────── */
+    .main-content {
+      width: 65%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      background: white;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .section-title::after {
+      content: "";
+      flex-grow: 1;
+      height: 1px;
+      background: var(--border-color);
+    }
+
+    .summary-text {
+      font-size: 10pt;
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 18px;
+      border-left: 2px solid var(--border-color);
+      margin-bottom: 20px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      background: var(--accent-color);
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .timeline-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+
+    .timeline-date {
+      font-size: 9pt;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    .timeline-subtitle {
+      font-size: 10pt;
+      color: var(--text-light);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .timeline-content {
+      font-size: 9.5pt;
+      color: var(--text-main);
+    }
+
+    .timeline-content ul {
+      padding-left: 15px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .project-card {
+      background: #fcfcfc;
+      border: 1px solid #eeeeee;
+      padding: 15px;
+      border-radius: 6px;
+    }
+
+    .project-card h4 {
+      font-size: 11pt;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--accent-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .project-links {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .project-link-wrapper {
+      font-size: 8.5pt;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .project-link {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .project-tech {
+      font-size: 8.5pt;
+      color: var(--text-light);
+      font-style: italic;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .project-desc {
+      font-size: 9.5pt;
+      color: var(--text-main);
+      line-height: 1.5;
+    }
+
+    @media print {
+      body { background: white; }
+      .cv-page { box-shadow: none; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-page">
+    
+    <!-- SIDEBAR (PLATINUM) -->
+    <div class="sidebar">
+      <div class="name-section">
+        <h1>Kailash Kunwar</h1>
+        <div class="title">Full Stack / MERN Developer</div>
+      </div>
+
+      <div class="sidebar-block">
+        <h3 class="sidebar-section-title">Contact</h3>
+        <div class="contact-info">
+          <div class="contact-item">📍 Kathmandu, Nepal</div>
+          <div class="contact-item">📧 kailashkunwar10@gmail.com</div>
+          <div class="contact-item">📞 9865367653 / 9825191257</div>
+          <div class="contact-item">🔗 <a href="https://linkedin.com/in/kailash08">linkedin.com/in/kailash08</a></div>
+          <div class="contact-item">🐙 <a href="https://github.com/kailashkunwar45">github.com/kailashkunwar45</a></div>
+        </div>
+      </div>
+
+      <div class="sidebar-block">
+        <h3 class="sidebar-section-title">Technical Skills</h3>
+        <div class="skills-category">
+          <h4>Frontend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Framer Motion</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>Backend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h4>Tools</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-block">
+        <h3 class="sidebar-section-title">Education</h3>
+        <div class="edu-item">
+          <div class="edu-year">2024 — Present</div>
+          <div class="edu-degree">BCA (4th Semester)</div>
+          <div class="edu-school">Aadim National College, TU</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2021 — 2023</div>
+          <div class="edu-degree">+2 Science</div>
+          <div class="edu-school">Xavier International College</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year">2019</div>
+          <div class="edu-degree">SEE</div>
+          <div class="edu-school">Saraswati Secondary School</div>
+        </div>
+      </div>
+
+      <div class="sidebar-block">
+        <h3 class="sidebar-section-title">Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Nepali</span>
+          <span class="skill-tag">English</span>
+          <span class="skill-tag">Hindi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      
+      <section>
+        <h2 class="section-title">Professional Profile</h2>
+        <p class="summary-text">
+          Highly motivated and responsible BCA student at Aadim National College with a passion for building scalable web applications. 
+          I specialize in the MERN stack and am actively developing software solutions from database design to interactive UIs. 
+          Expert in clean code, modern web technologies, and professional correspondence.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <span class="timeline-title">Full Stack Developer</span>
+            <span class="timeline-date">2023 — Present</span>
+          </div>
+          <div class="timeline-subtitle">Fresher / Freelance</div>
+          <div class="timeline-content">
+            <ul>
+              <li>Developing full-stack web applications using MongoDB, Express, React, and Node.js.</li>
+              <li>Building end-to-end solutions including database architecture and responsive frontends.</li>
+              <li>Focused on professional excellence, problem-solving, and clean, maintainable code.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+          
+          <div class="project-card">
+            <h4>Nexus — Social Media Platform</h4>
+            <div class="project-tech">MongoDB, Express.js, React, Node.js, Tailwind CSS, Cloudinary</div>
+            <p class="project-desc">A modern social media platform featuring real-time interactions, post updates, user authentication, and a dynamic feed.</p>
+            <div class="project-links">
+              <div class="project-link-wrapper">GitHub: <a href="https://github.com/kailashkunwar45/Nexus" class="project-link">https://github.com/kailashkunwar45/Nexus</a></div>
+              <div class="project-link-wrapper">Live: <a href="https://nexus-a27b.onrender.com" class="project-link">https://nexus-a27b.onrender.com</a></div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4>Sanskar — Multi-Vendor App</h4>
+            <div class="project-tech">MERN Stack, eSewa & Khalti Integration, Dashboard</div>
+            <p class="project-desc">Production-grade multi-vendor platform for religious services with secure payment integration and vendor management.</p>
+            <div class="project-links">
+              <div class="project-link-wrapper">GitHub: <a href="https://github.com/kailashkunwar45/Sanskar" class="project-link">https://github.com/kailashkunwar45/Sanskar</a></div>
+              <div class="project-link-wrapper">Live: <a href="https://sanskar-bu44.onrender.com/" class="project-link">https://sanskar-bu44.onrender.com/</a></div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4>LinkIt — Real-Time Chat App</h4>
+            <div class="project-tech">Socket.io, WebRTC, React, Node, MongoDB</div>
+            <p class="project-desc">Full-featured chat application with video calling, group chats, and real-time indicators.</p>
+            <div class="project-links">
+              <div class="project-link-wrapper">GitHub: <a href="https://github.com/kailashkunwar45/connectify" class="project-link">https://github.com/kailashkunwar45/connectify</a></div>
+              <div class="project-link-wrapper">Live: <a href="https://link-it-8q6z.onrender.com" class="project-link">https://link-it-8q6z.onrender.com</a></div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4>Developer Portfolio</h4>
+            <div class="project-tech">Next.js 16, TypeScript, Tailwind CSS, Framer Motion</div>
+            <p class="project-desc">A highly animated, glassmorphism-styled portfolio showcasing projects and technical expertise.</p>
+            <div class="project-links">
+              <div class="project-link-wrapper">GitHub: <a href="https://github.com/kailashkunwar45/myPortfolio" class="project-link">https://github.com/kailashkunwar45/myPortfolio</a></div>
+              <div class="project-link-wrapper">Live: <a href="https://kailashkunwar.vercel.app" class="project-link">https://kailashkunwar.vercel.app</a></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
