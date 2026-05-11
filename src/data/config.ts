@@ -73,7 +73,7 @@ export const portfolioConfig = {
       github: "https://github.com/kailashkunwar45/MEDIQUE",
       live: "https://medique-2sad.onrender.com",
       featured: true,
-      image: "",
+      image: "/medique.png",
     },
     {
       id: "nexus",
@@ -84,7 +84,7 @@ export const portfolioConfig = {
       github: "https://github.com/kailashkunwar45/Nexus",
       live: "https://nexus-a27b.onrender.com",
       featured: true,
-      image: "",
+      image: "/nexus.png",
     },
     {
       id: "sanskar",
@@ -95,7 +95,7 @@ export const portfolioConfig = {
       github: "https://github.com/kailashkunwar45/Sanskar",
       live: "https://sanskar-bu44.onrender.com/",
       featured: true,
-      image: "",
+      image: "/sanskar.png",
     },
     {
       id: "linkit",
@@ -106,7 +106,7 @@ export const portfolioConfig = {
       github: "https://github.com/kailashkunwar45/connectify",
       live: "https://link-it-8q6z.onrender.com",
       featured: true,
-      image: "",
+      image: "/linkit.png",
     },
     {
       id: "bloodmatch",
