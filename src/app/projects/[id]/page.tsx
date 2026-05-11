@@ -61,6 +61,23 @@ export default function ProjectDetails() {
         <div className="grid gap-12 lg:grid-cols-[1fr_350px]">
           {/* Main Content */}
           <div className="space-y-10">
+            {/* Project Hero Image */}
+            {project.image && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#050709]/60 to-transparent" />
+              </motion.div>
+            )}
+
             {/* Title Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

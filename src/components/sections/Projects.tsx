@@ -28,6 +28,18 @@ export function Projects() {
               viewport={{ once: true }}
             >
               <GlassCard className="group h-full flex flex-col p-0 border-white/5 overflow-hidden transition-all duration-500 hover:border-cyan-500/50 hover:shadow-cyan-500/20">
+                {/* Image Preview */}
+                {project.image && (
+                  <div className="relative h-48 w-full overflow-hidden border-b border-white/5">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050709] via-transparent to-transparent opacity-60" />
+                  </div>
+                )}
 
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">

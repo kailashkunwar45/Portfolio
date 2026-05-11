@@ -109,6 +109,17 @@ export const portfolioConfig = {
       image: "",
     },
     {
+      id: "bloodmatch",
+      title: "BloodMatch — Blood Donation & Management Platform",
+      description:
+        "A production-ready platform for connecting blood donors, seekers, and health institutions in real-time. Features role-based dashboards, geospatial matching, and verified institution validation. Built with a focused MERN architecture to streamline life-saving blood donations and inventory management.",
+      techStack: ["MongoDB", "Express.js", "React", "Node.js", "Vite", "Tailwind CSS"],
+      github: "https://github.com/kailashkunwar45/BLOODMATCH",
+      live: "https://bloodmatch-0.onrender.com",
+      featured: true,
+      image: "/bloodmatch.png",
+    },
+    {
       id: "portfolio",
       title: "Developer Portfolio",
       description:
