@@ -65,6 +65,17 @@ export const portfolioConfig = {
   // ── Projects ───────────────────────────────────────────────
   projects: [
     {
+      id: "vlogapp",
+      title: "Vlog App — Social Memory Sharing Platform",
+      description:
+        "A full-stack social platform where users can create, share, and explore cherished memories with the world. Features secure JWT-based authentication, image-rich post creation with Cloudinary storage, interactive likes and comments, real-time search, and a beautifully responsive card-based feed. Built with the MERN stack using a clean monorepo architecture, Memories delivers a seamless and nostalgic experience for storytelling and community connection.",
+      techStack: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Cloudinary"],
+      github: "https://github.com/kailashkunwar45/vlog-app",
+      live: "https://vlog-app-5lvn.onrender.com",
+      featured: true,
+      image: "/vlogapp.png",
+    },
+    {
       id: "medique",
       title: "Medique — Healthcare Management System",
       description:
