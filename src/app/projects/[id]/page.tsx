@@ -115,6 +115,77 @@ export default function ProjectDetails() {
                 {project.description}
               </p>
             </motion.div>
+
+            {/* Companion App Features */}
+            {"features" in project && project.features && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="space-y-6 pt-6"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="h-0.5 w-12 bg-cyan-500/50" />
+                  <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-cyan-500">
+                    Interactive Companion Sandbox
+                  </h2>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {project.features.map((feature: any, idx: number) => (
+                    <div
+                      key={idx}
+                      className="group rounded-xl border border-white/5 bg-white/[0.01] p-5 transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.03]"
+                    >
+                      <h4 className="mb-1 font-space-grotesk font-bold text-white group-hover:text-cyan-400 transition-colors">
+                        {feature.title}
+                      </h4>
+                      <p className="text-xs text-zinc-400 leading-relaxed">
+                        {feature.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Unreal Engine 5 Subsystems */}
+            {"ueSystems" in project && project.ueSystems && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="space-y-6 pt-6"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="h-0.5 w-12 bg-cyan-500/50" />
+                  <h2 className="text-lg font-bold uppercase tracking-[0.2em] text-cyan-500">
+                    Unreal Engine 5 C++ Subsystems
+                  </h2>
+                </div>
+                <div className="space-y-4">
+                  {project.ueSystems.map((system: any, idx: number) => (
+                    <div
+                      key={idx}
+                      className="group rounded-xl border border-white/5 bg-zinc-950/20 p-5 transition-all duration-300 hover:border-cyan-500/30 hover:bg-zinc-950/40"
+                    >
+                      <div className="flex items-center justify-between gap-4 mb-2">
+                        <code className="text-sm font-bold text-cyan-400 font-mono">
+                          {system.name}
+                        </code>
+                        <span className="rounded bg-cyan-500/10 px-2 py-0.5 text-[10px] font-mono font-bold uppercase tracking-wider text-cyan-300 border border-cyan-500/20">
+                          C++ Class
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-400 leading-relaxed">
+                        {system.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
           </div>
 
           {/* Sidebar Info */}

@@ -65,6 +65,69 @@ export const portfolioConfig = {
   // ── Projects ───────────────────────────────────────────────
   projects: [
     {
+      id: "jungagame",
+      title: "Junga — UE5 & Web Companion Sandboxed Open-World Slice",
+      description:
+        "A premium, highly-immersive open-world vertical slice and interactive companion app set during the rise of Jung Bahadur Rana in 19th-century Nepal. Inspired by high-fidelity gameplay loops like Ghost of Tsushima, Assassin's Creed, and GTA, this project blends advanced Unreal Engine 5 C++ subsystems with a glassmorphic HTML5 client-side dashboard sandbox.",
+      techStack: ["Unreal Engine 5", "C++", "HTML5", "Web Audio API", "Framer Motion", "Tailwind CSS"],
+      github: "https://github.com/kailashkunwar45/jungaGame",
+      live: "https://jungagame.onrender.com",
+      featured: true,
+      image: "/jungagame.png",
+      features: [
+        {
+          title: "Secure Faction Gateway",
+          desc: "Immersive login and registration overlay allowing courtiers to authenticate their noble lineage."
+        },
+        {
+          title: "Persistent Lineage Stats",
+          desc: "Automatically saves and loads your gold, health, equipped armaments, active quest stage, and unlocked achievements directly using browser storage (localStorage and sessionStorage)."
+        },
+        {
+          title: "Intruder Alert System",
+          desc: "Entering an incorrect password signals the palace guards, raising the wanted level by 15 points and triggering combat warnings."
+        },
+        {
+          title: "Interactive Palace Map",
+          desc: "Explore Taleju Bazaar, Kot Courtyard, Palace Interiors, and the Safehouse with real-time random encounter checks."
+        },
+        {
+          title: "Authentic Nepalese Kauda",
+          desc: "A traditional cowrie shell gambling board allowing you to place stakes on physical-simulation face-up shell bets."
+        },
+        {
+          title: "Temple Sparring Arena",
+          desc: "Spar with Royal Guard captains or rival nobles, compiling real-time strike and parry log traces."
+        },
+        {
+          title: "Procedural Soundboard Synthesizers",
+          desc: "Features low-pass Himalayan Torrent rain & thunder, Sarangi Whispers string raga slides, Bansuri flute Himalayan Breath, and 110 BPM Rana War Drums."
+        }
+      ],
+      ueSystems: [
+        {
+          name: "AProtagonistCharacter",
+          desc: "Controls weapon switches (Gurkha Khukuris, cavalry Talwars, heavy sacrificial Koras, flintlock Muskets), stamina scaling, blocking states, and active input bindings."
+        },
+        {
+          name: "AHorseVehicle",
+          desc: "A physics-driven rideable mount controller managing galloping, equine stamina, and skeletal attachment snapping."
+        },
+        {
+          name: "ANpcCitizenCharacter",
+          desc: "A dynamic citizen AI class shifting state machines among four specific routines (Work, Gossip, Patrol, Rest) based on the Time of Day clock."
+        },
+        {
+          name: "APoliticalThreatSystem",
+          desc: "Monitors player threat points (0-100) and shifts world parameters (double patrol counts, lock gates, checkpoints, treason hunt status) across five distinct tiers."
+        },
+        {
+          name: "UQuestMissionManager",
+          desc: "World Subsystem managing quest milestones, dialogue, waypoint coordinates, and reward distribution."
+        }
+      ]
+    },
+    {
       id: "vlogapp",
       title: "Vlog App — Social Memory Sharing Platform",
       description:

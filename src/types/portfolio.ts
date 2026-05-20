@@ -6,15 +6,27 @@ export type Skill = {
 
 export type SkillCategory = "Frontend" | "Backend" | "Tools";
 
+export type FeatureItem = {
+  title: string;
+  desc: string;
+};
+
+export type UeSystemItem = {
+  name: string;
+  desc: string;
+};
+
 export type Project = {
   id: string;
   title: string;
   description: string;
-  techStack: string[];
+  techStack: readonly string[] | string[];
   github: string;
   live: string;
   featured: boolean;
   image?: string;
+  features?: readonly FeatureItem[] | FeatureItem[];
+  ueSystems?: readonly UeSystemItem[] | UeSystemItem[];
 };
 
 export type Experience = {
